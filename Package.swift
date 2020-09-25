@@ -20,7 +20,13 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "NextechControls",
-            dependencies: []),
+            dependencies: [],
+            sources: ["NextechControls.swift",
+                      "TestButton.swift",
+                      "MergeMenuViewController2.swift",
+                      "Resources/MergeMenu2.storyboard"
+            ]
+        ),
         .testTarget(
             name: "NextechControlsTests",
             dependencies: ["NextechControls"]),

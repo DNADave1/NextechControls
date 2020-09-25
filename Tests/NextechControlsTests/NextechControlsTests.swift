@@ -7,6 +7,7 @@ final class NextechControlsTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
         XCTAssertEqual(NextechControls().text, "Hello, World!")
+        
     }
 
     static var allTests = [
