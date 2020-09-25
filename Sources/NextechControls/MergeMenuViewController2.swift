@@ -50,7 +50,7 @@ public class MergeMenuViewController2: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layer.cornerRadius = viewCornerRadius
         self.BadgeView.layer.cornerRadius = badgeCornerRadius
