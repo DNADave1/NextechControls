@@ -19,7 +19,7 @@ protocol MergeMenuViewControllerDelegate: UIPopoverPresentationControllerDelegat
     var unreconciledCCDACount: Int { get }
 }
 
-class MergeMenuViewController2: UIViewController {
+public class MergeMenuViewController2: UIViewController {
     
     // Options that might be set externally:
     public var viewCornerRadius: CGFloat = 8
