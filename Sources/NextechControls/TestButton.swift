@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-class TestButton: UIButton {
+public class TestButton: UIButton {
     
 }
