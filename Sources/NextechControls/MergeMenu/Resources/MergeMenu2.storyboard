@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gVD-xt-XRU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Merge Menu View Controller2-->
+        <scene sceneID="kef-Zq-t1h">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="gVD-xt-XRU" customClass="MergeMenuViewController2" customModule="NextechControls" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="Wda-Sn-Ewt">
+                        <rect key="frame" x="0.0" y="0.0" width="276" height="137"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRX-Ns-EVL">
+                                <rect key="frame" x="0.0" y="0.0" width="276" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0lX-Z9-cii"/>
+                                </constraints>
+                                <state key="normal" title="Reconcile CCDAs"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfI-BT-ln4">
+                                <rect key="frame" x="0.0" y="46" width="276" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="y3u-97-748"/>
+                                </constraints>
+                                <state key="normal" title="Merge Summary of Care"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qj-k9-vQ8">
+                                <rect key="frame" x="0.0" y="92" width="276" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="BFl-wB-ie3"/>
+                                </constraints>
+                                <state key="normal" title="Merge Clinical Summary"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ae9-oy-fto">
+                                <rect key="frame" x="219" y="0.0" width="50" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HfS-Pv-Zct">
+                                        <rect key="frame" x="13" y="10.5" width="24" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="KWC-bw-wZN"/>
+                                            <constraint firstAttribute="height" constant="24" id="PuH-q7-Ggp"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWh-Po-IiY">
+                                        <rect key="frame" x="8" y="14.5" width="34" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="01G-uB-I3G"/>
+                                    <constraint firstItem="FWh-Po-IiY" firstAttribute="width" secondItem="HfS-Pv-Zct" secondAttribute="width" multiplier="1.4" id="AEX-RP-Y8U"/>
+                                    <constraint firstItem="FWh-Po-IiY" firstAttribute="height" secondItem="HfS-Pv-Zct" secondAttribute="height" multiplier="0.683333" id="JHi-H0-who"/>
+                                    <constraint firstItem="FWh-Po-IiY" firstAttribute="centerY" secondItem="HfS-Pv-Zct" secondAttribute="centerY" id="Mpo-2m-FVl"/>
+                                    <constraint firstItem="HfS-Pv-Zct" firstAttribute="centerX" secondItem="ae9-oy-fto" secondAttribute="centerX" id="dRS-EV-lPm"/>
+                                    <constraint firstItem="FWh-Po-IiY" firstAttribute="centerX" secondItem="HfS-Pv-Zct" secondAttribute="centerX" id="him-VH-GC0"/>
+                                    <constraint firstItem="HfS-Pv-Zct" firstAttribute="centerY" secondItem="ae9-oy-fto" secondAttribute="centerY" id="tJg-pI-UyA"/>
+                                    <constraint firstAttribute="width" constant="50" id="wNi-CX-7ev"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5qj-k9-vQ8" firstAttribute="bottom" secondItem="Wda-Sn-Ewt" secondAttribute="bottom" id="4CI-1b-c5Y"/>
+                            <constraint firstAttribute="top" secondItem="ae9-oy-fto" secondAttribute="top" id="4mH-87-Y3p"/>
+                            <constraint firstAttribute="trailing" secondItem="ZRX-Ns-EVL" secondAttribute="trailing" id="6WL-VL-Pz1"/>
+                            <constraint firstAttribute="trailing" secondItem="5qj-k9-vQ8" secondAttribute="trailing" id="G1y-Bo-v86"/>
+                            <constraint firstItem="ZRX-Ns-EVL" firstAttribute="top" secondItem="Wda-Sn-Ewt" secondAttribute="top" id="RNw-QD-T69"/>
+                            <constraint firstAttribute="trailing" secondItem="ae9-oy-fto" secondAttribute="trailing" constant="7" id="UzT-yr-fK0"/>
+                            <constraint firstItem="5qj-k9-vQ8" firstAttribute="leading" secondItem="Wda-Sn-Ewt" secondAttribute="leading" id="eOR-cc-bhH"/>
+                            <constraint firstItem="ZRX-Ns-EVL" firstAttribute="leading" secondItem="Wda-Sn-Ewt" secondAttribute="leading" id="eX4-xU-i3j"/>
+                            <constraint firstItem="5qj-k9-vQ8" firstAttribute="top" secondItem="sfI-BT-ln4" secondAttribute="bottom" constant="1" id="hjB-9h-VC8"/>
+                            <constraint firstItem="sfI-BT-ln4" firstAttribute="leading" secondItem="Wda-Sn-Ewt" secondAttribute="leading" id="joK-JP-uUa"/>
+                            <constraint firstAttribute="trailing" secondItem="sfI-BT-ln4" secondAttribute="trailing" id="ryq-va-fZ4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RPb-jU-A0y"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="276" height="137"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="276" height="137"/>
+                    <connections>
+                        <outlet property="BadgeView" destination="HfS-Pv-Zct" id="x2q-sc-CGi"/>
+                        <outlet property="CCDABadgeLabel" destination="FWh-Po-IiY" id="4M0-eH-spg"/>
+                        <outlet property="CCDAsNeedingReconciliationButton" destination="ZRX-Ns-EVL" id="WCX-mD-rfA"/>
+                        <outlet property="CCDAsToReconcileBadge" destination="ae9-oy-fto" id="PV6-aa-Vhy"/>
+                        <outlet property="ClinicalSumButton" destination="5qj-k9-vQ8" id="Qs2-sK-HmD"/>
+                        <outlet property="SummaryOfCareButton" destination="sfI-BT-ln4" id="xNV-L5-kZx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ns8-1s-4cy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-223.91304347826087" y="-80.691964285714278"/>
+        </scene>
+    </scenes>
+</document>
